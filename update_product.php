@@ -24,7 +24,7 @@ print_r($product);
                   <div class="card-body">
                     <h4 class="card-title">Update Product</h4>
                     <form method="post" action="action/update_product_action.php" enctype="multipart/form-data"  class="forms-sample">
-                        <input type="text" value="<?php echo $_GET['id']; ?>" name="product_id"/>
+                        <input type="hidden" value="<?php echo $_GET['id']; ?>" name="product_id" />
                     <div class="form-group">
                         <label for="exampleInputUsername1">Title</label>
                         <input name="title" value="<?php echo $product['product_title']  ?>" type="text" class="form-control" id="exampleInputUsername1" placeholder="Title">
